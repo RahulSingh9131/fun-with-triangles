@@ -11,8 +11,8 @@ function calculateSemiPerimeter(side1,side2,side3){
 
 function calculateArea(){
     const totalArea=calculateSemiPerimeter(Number(input[0].value),Number(input[1].value),Number(input[2].value));
-    if(input[0].value&&input[1].value&&input[2].value){
-        output.innerText="Area of ∆ using Heron's formula is:"+totalArea +" cm²";
+    if(Number(input[0].value)&&Number(input[1].value)&&Number(input[2].value)){
+        output.innerText="Area of ∆ using Heron's formula is:"+totalArea.toFixed(2) +" cm²";
     }else{
         output.innerText="Please enter all fields";
     }
